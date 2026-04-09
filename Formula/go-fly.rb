@@ -5,21 +5,21 @@
 class GoFly < Formula
   desc "Fast CLI to jump to local git repos by name"
   homepage "https://github.com/TheOneWithTheWrench/go-fly"
-  version "0.1.5"
+  version "0.1.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/TheOneWithTheWrench/go-fly/releases/download/v0.1.5/go-fly_darwin_amd64.tar.gz"
-      sha256 "59de221537109d979388a876eaa6b5a08418bded4654f72f2b1a2d520019e643"
+      url "https://github.com/TheOneWithTheWrench/go-fly/releases/download/v0.1.6/go-fly_darwin_amd64.tar.gz"
+      sha256 "fe01f762195a492e3139e661252c6f66324e1d9af391556472ab0c0405179a92"
 
       define_method(:install) do
         bin.install "fly"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/TheOneWithTheWrench/go-fly/releases/download/v0.1.5/go-fly_darwin_arm64.tar.gz"
-      sha256 "923dac4636288a499cccf2120efc2aa3a78124980fcd06442a14be0c5e40a3e3"
+      url "https://github.com/TheOneWithTheWrench/go-fly/releases/download/v0.1.6/go-fly_darwin_arm64.tar.gz"
+      sha256 "aa5295e31504627f0b996f73fe6f497a1e8234dc82d80c12d5ff4dff1be0ab57"
 
       define_method(:install) do
         bin.install "fly"
@@ -29,15 +29,15 @@ class GoFly < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheOneWithTheWrench/go-fly/releases/download/v0.1.5/go-fly_linux_amd64.tar.gz"
-      sha256 "b08a005bf66ca715f70842b4a7ad4f2d8610b80e4b65e1fb02bada91b3f9e930"
+      url "https://github.com/TheOneWithTheWrench/go-fly/releases/download/v0.1.6/go-fly_linux_amd64.tar.gz"
+      sha256 "f2340b9e12e39bd0f1ef76dfd970de159f6c91a485cd23c427b51d23c4d388b8"
       define_method(:install) do
         bin.install "fly"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheOneWithTheWrench/go-fly/releases/download/v0.1.5/go-fly_linux_arm64.tar.gz"
-      sha256 "3b8a1ccc5206f9d80fd0c9715f2b1e572143960bc79c9217165c51d6a8c8ecb8"
+      url "https://github.com/TheOneWithTheWrench/go-fly/releases/download/v0.1.6/go-fly_linux_arm64.tar.gz"
+      sha256 "3e6bd9ad0d705a4784711729fbd4ff5a68f0ef008ee8232e72ecb84abf460ee5"
       define_method(:install) do
         bin.install "fly"
       end
