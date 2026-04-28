@@ -5,21 +5,21 @@
 class SkillSelector < Formula
   desc "Manage shared skills across supported coding agents"
   homepage "https://github.com/TheOneWithTheWrench/skill-selector"
-  version "0.0.2"
+  version "0.0.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/TheOneWithTheWrench/skill-selector/releases/download/v0.0.2/skill-selector_darwin_amd64.tar.gz"
-      sha256 "a6d30cad6d2f74c9b4446026cabdb8ff5327872955d4d78d3203092e2ea9fe3a"
+      url "https://github.com/TheOneWithTheWrench/skill-selector/releases/download/v0.0.3/skill-selector_darwin_amd64.tar.gz"
+      sha256 "f7f6befffb5b99e14d435f9fd1529f48fe94798c64c36c64cb2c88035bc9bc03"
 
       define_method(:install) do
         bin.install "skill-selector"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/TheOneWithTheWrench/skill-selector/releases/download/v0.0.2/skill-selector_darwin_arm64.tar.gz"
-      sha256 "1720a17a471f4fd6519cff390ec4ed0dfd9600794e85143b98cb030da6708e54"
+      url "https://github.com/TheOneWithTheWrench/skill-selector/releases/download/v0.0.3/skill-selector_darwin_arm64.tar.gz"
+      sha256 "a243bf4416659318c50de57787236dd50536458b1db49385e726d3c3d212862e"
 
       define_method(:install) do
         bin.install "skill-selector"
@@ -29,15 +29,15 @@ class SkillSelector < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheOneWithTheWrench/skill-selector/releases/download/v0.0.2/skill-selector_linux_amd64.tar.gz"
-      sha256 "072cfead03745aa35f853566cfc3636d66498d1b9c4532a443654dd963ef66bd"
+      url "https://github.com/TheOneWithTheWrench/skill-selector/releases/download/v0.0.3/skill-selector_linux_amd64.tar.gz"
+      sha256 "821e2f29b7d89e9b4757e4faae9c6872a10c58392eab3bd6b0ecd7901bb115b5"
       define_method(:install) do
         bin.install "skill-selector"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/TheOneWithTheWrench/skill-selector/releases/download/v0.0.2/skill-selector_linux_arm64.tar.gz"
-      sha256 "d5e4d1c29f7cafa34b06d0bd6fa92e83843e99aa944b1ac7eddd1a509b22c705"
+      url "https://github.com/TheOneWithTheWrench/skill-selector/releases/download/v0.0.3/skill-selector_linux_arm64.tar.gz"
+      sha256 "3d836d0cc2148750841a472f0e2fd4650fa5f2b092394ac166dab9eb369fa865"
       define_method(:install) do
         bin.install "skill-selector"
       end
